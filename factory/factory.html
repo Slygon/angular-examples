@@ -1,0 +1,82 @@
+<html ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<link href="../bootstrap.min.css" rel="stylesheet" >
+	<link href="../site.css" rel="stylesheet" >
+</head>
+<body>
+
+	<h1 class="text-center">Angular Factory</h1>
+
+	<div class="row box-container" >
+
+
+		<div class="col-lg-offset-2 col-lg-3" ng-controller="myController1">
+			<div  class="zero-clipboard">
+				<span class="btn-clipboard">Controller 1</span>
+			</div>
+			<div class="box-example"> <br><Br>
+
+
+
+				<div class="text-center">
+					<input type="text" class="form-control" ng-model="shared.msg">
+				</div>
+				<div class="myfont">{{shared.msg}}</div>
+
+
+			</div>
+		</div>
+
+		<div class="col-lg-offset-2 col-lg-3" ng-controller="myController2">
+			<div  class="zero-clipboard">
+				<span class="btn-clipboard">Controller 2</span>
+			</div>
+			<div class="box-example"> <br><Br>
+
+
+
+				<div class="text-center">
+					<input type="text" class="form-control" ng-model="shared.msg">
+				</div>
+				<div class="myfont">{{shared.msg}}</div>
+
+
+			</div>
+		</div>
+	</div>
+
+
+	<div class="row box-container" >
+		<div class="col-lg-offset-4 col-lg-4" ng-controller="myController3">
+			<div  class="zero-clipboard">
+				<span class="btn-clipboard">Controller 3</span>
+			</div>
+			<div class="box-example"> <br><Br>
+
+
+
+				<div class="text-center">
+					<input type="text" class="form-control" ng-model="msg">
+				</div>
+				<div class="myfont">{{msg}}</div>
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+	<div class="text-center">
+		<a href="../index.html">חזרה לדוגמאות</a>
+	</div>
+
+	<!-- Angular script -->
+	<script src="../angular.js"></script>
+
+	<!-- Our site script -->
+	<script src="./myFactory.js"></script>
+
+</body>
+</html>
